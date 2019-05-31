@@ -76,12 +76,14 @@ p {
 .headercontainer {
     display: flex;
     align-items: flex-end;
-    padding-bottom: 40px;
+    padding:20px 0 40px 0;
+
 }
 
-header nav a {
+header .headercontainer .topnavcontainer nav a {
     padding: 0 35px;
     text-decoration: none;
+    color: black;
 }
 
 .navcontainer {
@@ -264,4 +266,40 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ABOUT PAGE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.aboutsection {
+    padding: 20px 0 30px 0;
+    border-bottom: 1px dashed black;
+    
+}
+
+.grid {
+display: flex;
+flex-flow: row wrap;
+justify-content: space-around;
+}
+
+.griditem {
+display: flex;
+flex-direction: column;
+width: 46%;
+padding: 30px 0 20px 0;
+border-bottom: 1px dashed black;
+}
+
+.grid .griditem h4 {
+    padding-top: 20px;
+}
+
+.grid .griditem button {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    width: 38%;
+    height: 38px;
+    border-radius: 9px;
+    margin: 15px 0 0 0;
 }
